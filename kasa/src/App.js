@@ -1,5 +1,24 @@
+import React from "react";
+import { Home } from "./pages/Home.jsx";
+import { About } from "./pages/About.jsx";
+import { Accommodation } from "./pages/Accommodation.jsx";
+import { Error } from "./pages/Error.jsx";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
-  return <div>coucou</div>;
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/accommodation" element={<Accommodation />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
