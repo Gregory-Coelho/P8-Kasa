@@ -1,11 +1,9 @@
-import { Header } from "../components/Header";
+import { HeaderAndFooter } from "../components/HeaderAndFooter";
 
 export const Accommodation = () => {
   return (
     <div>
-      <Header></Header>
-
-      <h1>Accommodation</h1>
+      <HeaderAndFooter></HeaderAndFooter>
     </div>
   );
 };

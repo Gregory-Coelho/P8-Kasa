@@ -1,10 +1,8 @@
-import { Header } from "../components/Header";
-
+import { HeaderAndFooter } from "../components/HeaderAndFooter";
 export const Error = () => {
   return (
     <div>
-      <Header></Header>
-      <h1> Error</h1>
+      <HeaderAndFooter></HeaderAndFooter>
     </div>
   );
 };

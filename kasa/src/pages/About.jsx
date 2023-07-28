@@ -1,11 +1,10 @@
-import { Header } from "../components/Header";
+import { HeaderAndFooter } from "../components/HeaderAndFooter";
+import { Banner } from "../components/Banner";
 
 export const About = () => {
   return (
     <div>
-      <Header></Header>
-
-      <h1>About</h1>
+      <HeaderAndFooter children={<Banner></Banner>}></HeaderAndFooter>
     </div>
   );
 };
