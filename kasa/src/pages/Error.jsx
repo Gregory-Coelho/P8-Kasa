@@ -2,7 +2,7 @@ import { HeaderAndFooter } from "../components/HeaderAndFooter";
 export const Error = () => {
   return (
     <div>
-      <HeaderAndFooter></HeaderAndFooter>
+      <HeaderAndFooter>ERROR</HeaderAndFooter>
     </div>
   );
 };
