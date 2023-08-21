@@ -20,6 +20,9 @@ module.exports = {
       purple: colors.purple,
     },
     extend: {
+      fontFamily: {
+        montserrat: ["Montserrat"],
+      },
       backgroundImage: {
         home: "url('./assets/home.png')",
         about: "url('./assets/about.png')",

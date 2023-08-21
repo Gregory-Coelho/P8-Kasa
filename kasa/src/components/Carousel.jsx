@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ArrowLeft from "../assets/arrow_left.png";
-import ArrowRight from "../assets/arrow_right.png";
+import ArrowLeft from "../assets/arrowLeft.svg";
+import ArrowRight from "../assets/arrowRight.svg";
 
 export const Carousel = ({ pictures }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,19 +17,33 @@ export const Carousel = ({ pictures }) => {
     );
   }
   return (
-    <div className="">
+    <div className="relative">
       {pictures.length > 1 && (
-        <img className="" src={ArrowLeft} alt="flèche" onClick={prevSlide} />
+        <img
+          className="absolute top-1/2 left-10 -translate-x-1/2 -translate-y-1/2"
+          src={ArrowLeft}
+          alt="flèche gauche"
+          onClick={prevSlide}
+        />
       )}
 
-      <img src={pictures[currentSlide]} alt="images carrousel" />
+      <img
+        className="h-96 object-cover w-full rounded-3xl"
+        src={pictures[currentSlide]}
+        alt="images carrousel"
+      />
 
       {pictures.length > 1 && (
-        <img className="" src={ArrowRight} alt="flèche" onClick={nextSlide} />
+        <img
+          className="absolute top-1/2 right-0  -translate-x-1/2 -translate-y-1/2"
+          src={ArrowRight}
+          alt="flèche droite"
+          onClick={nextSlide}
+        />
       )}
 
       {pictures.length > 1 && (
-        <div className="">
+        <div className=" text-white absolute bottom-1 left-1/2  -translate-x-1/2 -translate-y-1/2">
           {currentSlide + 1}/{pictures.length}
         </div>
       )}
