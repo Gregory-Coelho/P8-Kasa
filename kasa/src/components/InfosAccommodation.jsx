@@ -1,9 +1,11 @@
+import { Collapse } from "./Collapse";
 import { Ratings } from "./Ratings";
 import { Tags } from "./Tags";
 
 export const InfosAccommodation = ({
   title,
   description,
+  equipments,
   location,
   hostName,
   tags,
@@ -11,7 +13,7 @@ export const InfosAccommodation = ({
   rating,
 }) => {
   return (
-    <div>
+    <div className="flex flex-col gap-4">
       <div className="flex justify-between">
         <div className="text-primary ">
           <h1 className="text-4xl font-medium">{title}</h1>
@@ -19,7 +21,7 @@ export const InfosAccommodation = ({
         </div>
 
         <div className="flex justify-between justify-items-center items-center">
-          <h3 className="m-3">{hostName}</h3>
+          <h3 className="m-3 text-primary text-right w-min">{hostName}</h3>
           <img
             className="rounded-full w-16 h-16"
             src={hostPicture}
@@ -30,6 +32,10 @@ export const InfosAccommodation = ({
       <div className="flex justify-between">
         <Tags tags={tags} />
         <Ratings rating={rating} />
+      </div>
+      <div className="flex justify-between gap-20">
+        <Collapse title="Description" content={description} />
+        <Collapse title="Équipements" content={equipments} />
       </div>
     </div>
   );

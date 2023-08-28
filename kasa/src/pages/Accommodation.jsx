@@ -25,6 +25,7 @@ export const Accommodation = () => {
           tags={accommodation.tags}
           hostPicture={accommodation.host.picture}
           rating={accommodation.rating}
+          equipments={accommodation.equipments}
         />
       </div>
     </HeaderAndFooter>
