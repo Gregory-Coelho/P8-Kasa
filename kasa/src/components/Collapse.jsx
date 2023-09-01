@@ -8,7 +8,7 @@ export const Collapse = ({ title, content }) => {
     <div className="flex flex-col w-full">
       <div
         onClick={() => setToggle(!toggle)}
-        className="bg-primary text-white h-12 text-xs rounded-md flex justify-between cursor-pointer justify-items-center content-center items-center p-4 w-full overflow-hidden z-10"
+        className="bg-primary text-white md:h-12 h-8 text-xs rounded-md flex justify-between cursor-pointer justify-items-center content-center items-center p-4 w-full overflow-hidden z-10"
       >
         <h2>{title}</h2>
         <img

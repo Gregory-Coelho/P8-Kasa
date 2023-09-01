@@ -9,11 +9,11 @@ export const Home = () => {
       <HeaderAndFooter
         children={
           <>
-            <Banner image={HomeImage}></Banner>
-            <Gallery></Gallery>
+            <Banner image={HomeImage} />
+            <Gallery />
           </>
         }
-      ></HeaderAndFooter>
+      />
     </div>
   );
 };

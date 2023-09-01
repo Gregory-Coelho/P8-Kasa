@@ -3,7 +3,7 @@ import { Card } from "./Card";
 
 export const Gallery = () => {
   return (
-    <div className="flex gap-24 bg-lightgrey flex-wrap justify-center items-center rounded-3xl my-10 p-16">
+    <div className="flex md:gap-24 gap-4 md:bg-lightgrey flex-wrap justify-center items-center rounded-3xl my-10 md:p-16">
       {datas.map((data) => {
         return (
           <Card

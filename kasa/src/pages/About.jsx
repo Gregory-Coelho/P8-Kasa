@@ -32,7 +32,7 @@ export const About = () => {
         children={
           <>
             <Banner image={AboutImage} />
-            <div className="flex flex-col justify-between gap-5 my-10 mx-20 font-medium ">
+            <div className="flex flex-col justify-between gap-5 md:my-10 my-5 md:mx-20 font-medium ">
               {aboutDetails.map((item) => {
                 return (
                   <Collapse
