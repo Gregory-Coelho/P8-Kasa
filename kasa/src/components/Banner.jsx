@@ -18,13 +18,12 @@ export const Banner = ({ image }) => {
         "overflow-hidden relative rounded-3xl md:h-48 h-28 flex justify-center items-center text-white text-6xl font-light mx-auto p-4"
       }
     >
-      {image && (
-        <img
-          className="w-full h-full object-cover absolute inset-0"
-          src={image}
-          alt="banner"
-        />
-      )}
+      <img
+        className="w-full h-full object-cover absolute inset-0"
+        src={image}
+        alt="banner"
+      />
+
       <div className="absolute inset-0 w-full h-full bg-black bg-opacity-30"></div>
       {!aboutPage && (
         <p className="z-10 font-medium md:text-5xl text-2xl">

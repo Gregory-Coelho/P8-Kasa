@@ -20,7 +20,7 @@ export const InfosAccommodation = ({
           <h2 className="text-lg font-medium">{location}</h2>
         </div>
 
-        <div className="flex justify-between justify-items-center items-center">
+        <div className="md:flex md:justify-between md:justify-items-center items-center">
           <h3 className="m-3 text-primary text-right w-min">{hostName}</h3>
           <img
             className="rounded-full w-16 h-16"
@@ -29,11 +29,11 @@ export const InfosAccommodation = ({
           />
         </div>
       </div>
-      <div className="flex justify-between">
+      <div className="md:flex md:justify-between">
         <Tags tags={tags} />
         <Ratings rating={rating} />
       </div>
-      <div className="flex justify-between gap-20">
+      <div className="md:flex md:justify-between md:gap-20">
         <Collapse title="Description" content={description} />
         <Collapse title="Équipements" content={equipments} />
       </div>
