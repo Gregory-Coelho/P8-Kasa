@@ -15,7 +15,7 @@ export const Banner = ({ image }) => {
   return (
     <div
       className={
-        "overflow-hidden relative rounded-3xl md:h-48 h-28 flex justify-center items-center text-white text-6xl font-light mx-auto p-4"
+        "overflow-hidden relative md:rounded-3xl rounded-lg md:h-48 h-28 flex justify-center items-center text-white text-6xl font-light mx-auto p-4"
       }
     >
       <img

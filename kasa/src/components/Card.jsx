@@ -5,7 +5,9 @@ export const Card = ({ cover, title, id }) => {
     <Link className="w-full md:w-auto" to={`/accommodation/${id}`}>
       <div
         key={id}
-        className={`flex items-end py-4 px-5 relative rounded-xl h-80 md:w-80 w-full bg-center bg-cover overflow-hidden`}
+        className={
+          "flex items-end py-4 px-5 relative rounded-xl md:h-80 h-64 md:w-80 w-full bg-center bg-cover overflow-hidden"
+        }
         style={{
           backgroundImage: `url(${cover})`,
         }}

@@ -17,9 +17,9 @@ export const Carousel = ({ pictures }) => {
     );
   }
   return (
-    <div className="relative rounded-3xl h-96 w-full">
+    <div className="relative md:rounded-3xl rounded-lg h-64 w-full">
       <img
-        className=" absolute object-cover h-full w-full rounded-3xl"
+        className=" absolute object-cover h-full w-full md:rounded-3xl rounded-lg"
         src={pictures[currentSlide]}
         alt="images carrousel"
       />
