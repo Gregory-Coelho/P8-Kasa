@@ -4,7 +4,7 @@ import EmptyStar from "../assets/emptyStar.svg";
 
 export const Ratings = ({ rating }) => {
   return (
-    <div className="flex w-48 justify-between">
+    <div className="flex md:w-48 w-3 gap-1.5 justify-between">
       <img src={rating >= 1 ? FullStar : EmptyStar} alt="Star" />
       <img src={rating >= 2 ? FullStar : EmptyStar} alt="Star" />
       <img src={rating >= 3 ? FullStar : EmptyStar} alt="Star" />
