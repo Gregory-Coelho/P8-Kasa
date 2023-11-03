@@ -1,0 +1,28 @@
+.errorCard{
+  display: flex;
+   flex-direction: column;
+   gap: 3.5rem;
+   justify-content: space-between;
+   align-items: center;
+}
+.errorImage{
+  width: 12rem;
+}
+.errorText{
+  width: 16rem;
+   text-align: center;
+}
+.errorLink{
+   text-decoration: underline;
+}
+@media (min-width: 768px) {
+   .errorImage{
+       width: 597px;
+  }
+   .errorText{
+       font-size: 2.25rem;
+       line-height: 2.5rem;
+       font-weight: 500;
+       width: 872px;
+  }
+}

@@ -2,6 +2,7 @@ import { HeaderAndFooter } from "../components/HeaderAndFooter";
 import { Banner } from "../components/Banner";
 import AboutImage from "../assets/about.png";
 import { Collapse } from "../components/Collapse";
+import { styles } from '../styles/About.module.css'
 
 export const About = () => {
   const aboutDetails = [
@@ -32,7 +33,7 @@ export const About = () => {
         children={
           <>
             <Banner image={AboutImage} />
-            <div className="flex flex-col justify-between gap-5 md:my-10 my-5 md:mx-20 font-medium ">
+            <div className={styles.aboutCard}>
               {aboutDetails.map((item) => {
                 return (
                   <Collapse

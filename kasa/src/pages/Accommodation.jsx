@@ -4,6 +4,7 @@ import { Carousel } from "../components/Carousel";
 import { InfosAccommodation } from "../components/InfosAccommodation";
 import datas from "../data/data.js";
 import { Error } from "./Error";
+import { styles } from '../styles/Accommodation.module.css'
 
 export const Accommodation = () => {
   const { id } = useParams();
@@ -15,7 +16,7 @@ export const Accommodation = () => {
 
   return (
     <HeaderAndFooter>
-      <div className="flex justify-between flex-col">
+      <div className={styles.accommodationCard}>
         <Carousel pictures={accommodation.pictures} />
         <InfosAccommodation
           title={accommodation.title}
