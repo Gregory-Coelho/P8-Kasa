@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
+import { styles } from '../styles/NavBar.module.css'
 
 export const NavBar = () => {
   return (
-    <div className="flex gap-6 md:gap-14 text-primary justify-between">
+    <div className={styles.navBarCard}>
       <Link
-        className="hover:underline uppercase md:normal-case text-xs md:text-2xl"
+        className={styles.navBarLink}
         to="/"
       >
         <p>Accueil</p>
       </Link>
       <Link
-        className="hover:underline uppercase md:normal-case text-xs md:text-2xl"
+        className={styles.navBarLink}
         to="/about"
       >
         A propos

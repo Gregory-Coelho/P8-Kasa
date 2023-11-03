@@ -1,0 +1,94 @@
+.infosAccommodationCard{
+  display: flex;
+   margin-top: 0.25rem;
+   margin-bottom: 1.25rem;
+   flex-direction: column;
+}
+.infosAccommodationContainer{
+  display: flex;
+   flex-direction: column;
+   gap: 0.25rem;
+}
+.infosAccommodationTagsContainer{
+  display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   justify-content: space-between;
+}
+.infosAccommodationTextContainer{
+  display: flex;
+   flex-direction: column;
+   gap: 0.25rem;
+}
+.infosAccommodationTitle{
+  font-size: 1.125rem;
+   line-height: 1.75rem;
+   font-weight: 400;
+}
+.infosAccommodationText{
+  font-size: 0.875rem;
+   line-height: 1.25rem;
+}
+.infosAccommodationRatingsContainer{
+  display: flex;
+   justify-content: space-between;
+}
+.infosAccommodationRatingsTextAndImageContainer{
+  display: flex;
+   align-items: center;
+}
+.infosAccommodationRatingsText{
+  margin: 0.75rem;
+   width: min-content;
+   font-size: 0.75rem;
+   line-height: 1rem;
+   text-align: right;
+}
+.infosAccommodationRatingsImage{
+  border-radius: 9999px;
+   width: 2rem;
+   height: 2rem;
+}
+.infosAccommodationCollapseContainer{
+  display: flex;
+   flex-direction: column;
+   gap: 1.25rem;
+   justify-content: space-between;
+}
+@media (min-width: 768px) {
+   .infosAccommodationContainer{
+       display: flex;
+       justify-content: space-between;
+  }
+   .infosAccommodationTagsContainer{
+       gap: 0.75rem;
+  }
+   .infosAccommodationTitle{
+       font-size: 2.25rem;
+       line-height: 2.5rem;
+       font-weight: 500;
+  }
+   .infosAccommodationText{
+       font-size: 1.125rem;
+       line-height: 1.75rem;
+       font-weight: 400;
+  }
+   .infosAccommodationRatingsContainer{
+      display: flex;
+       flex-direction: column-reverse;
+  }
+   .infosAccommodationRatingsTextAndImageContainer{
+       display: flex;
+       justify-content: flex-end;
+  }
+   .infosAccommodationRatingsImage{
+       width: 4rem;
+       height: 4rem;
+  }
+   .infosAccommodationCollapseContainer{
+       display: flex;
+       flex-direction: row;
+       gap: 5rem;
+       justify-content: space-between;
+  }
+}

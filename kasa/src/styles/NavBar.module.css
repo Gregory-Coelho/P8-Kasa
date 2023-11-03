@@ -1,0 +1,23 @@
+.navBarCard{
+  display: flex;
+   gap: 1.5rem;
+   justify-content: space-between;
+}
+.navBarLink{
+  font-size: 0.75rem;
+   line-height: 1rem;
+   text-transform: uppercase;
+}
+.navBarLink:hover{
+   text-decoration: underline;
+}
+@media (min-width: 768px) {
+   .navBarCard{
+       gap: 3.5rem;
+  }
+   .navBarLink{
+       font-size: 1.5rem;
+       line-height: 2rem;
+       text-transform: none;
+  }
+}

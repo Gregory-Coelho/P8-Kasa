@@ -1,6 +1,7 @@
 import { Collapse } from "./Collapse";
 import { Ratings } from "./Ratings";
 import { Tags } from "./Tags";
+import { styles } from '../styles/InfosAccommodation.module.css'
 
 export const InfosAccommodation = ({
   title,
@@ -13,33 +14,33 @@ export const InfosAccommodation = ({
   rating,
 }) => {
   return (
-    <div className="flex flex-col  mb-5 mt-1">
-      <div className="md:flex md:justify-between flex flex-col gap-1">
-        <div className="text-primary flex justify-between flex-col gap-2 md:gap-3">
-          <div className="flex gap-1 flex-col">
-            <h1 className="md:text-4xl md:font-medium font-normal text-lg">
+    <div className={styles.infosAccommodationCard}>
+      <div className={styles.infosAccommodationContainer}>
+        <div className={styles.infosAccommodationTagsContainer}>
+          <div className={styles.infosAccommodationTextContainer}>
+            <h1 className={styles.infosAccommodationTitle}>
               {title}
             </h1>
-            <h2 className="md:text-lg md:font-normal text-sm">{location}</h2>
+            <h2 className={styles.infosAccommodationText}>{location}</h2>
           </div>
           <Tags tags={tags} />
         </div>
 
-        <div className="md:flex md:flex-col-reverse flex justify-between">
+        <div className={styles.infosAccommodationRatingsContainer}>
           <Ratings rating={rating} />
-          <div className="md:flex  items-center flex md:justify-end">
-            <h3 className="m-3 text-primary text-right w-min text-xs">
+          <div className={styles.infosAccommodationRatingsTextAndImageContainer}>
+            <h3 className={styles.infosAccommodationRatingsText}>
               {hostName}
             </h3>
             <img
-              className="rounded-full md:w-16 md:h-16 w-8 h-8"
+              className={styles.infosAccommodationRatingsImage}
               src={hostPicture}
               alt="Profil"
             />
           </div>
         </div>
       </div>
-      <div className="md:flex md:justify-between md:gap-20 md:flex-row gap-5 flex justify-between flex-col">
+      <div className={styles.infosAccommodationCollapseContainer}>
         <Collapse title="Description" content={description} />
         <Collapse title="Équipements" content={equipments} />
       </div>
