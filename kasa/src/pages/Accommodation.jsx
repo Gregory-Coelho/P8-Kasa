@@ -6,6 +6,7 @@ import datas from "../data/data.js";
 import { Error } from "./Error";
 import { styles } from '../styles/Accommodation.module.css'
 
+
 export const Accommodation = () => {
   const { id } = useParams();
 
