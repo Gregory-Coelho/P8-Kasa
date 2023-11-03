@@ -1,11 +1,12 @@
 import logo from "../assets/logoWhite.svg";
+import { styles } from "../styles/Footer.module.css"; ``
 
 export const Footer = () => {
   return (
-    <div className="bg-black flex items-center flex-col w-screen justify-center md:mt-5">
-      <div className="mt-10 mb-5 flex items-center flex-col justify-center gap-3 text-xs text-center">
-        <img src={logo} alt="logo" className="w-32 h-10" />
-        <p className="text-white w-32 md:w-full md:text-2xl">
+    <div className={styles.footerCard}>
+      <div className={styles.footerContainer}>
+        <img src={logo} alt="logo" className={styles.footerImage} />
+        <p className={styles.footerText}>
           © 2020 Kasa. All rights reserved
         </p>
       </div>
