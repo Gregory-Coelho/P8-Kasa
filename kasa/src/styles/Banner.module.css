@@ -1,0 +1,53 @@
+.bannerCard{
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  height: 7rem;
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 300;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .bannerCard{
+      border-radius: 1.5rem;
+      height: 12rem
+ }
+}
+.bannerImage{
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.bannerTextFrame{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  --bg-opacity: 0.3;
+}
+.bannerText{
+  z-index: 10;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .bannerText{
+      font-size: 3rem;
+      line-height: 1;
+ }
+}

@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import {styles} from '../styles/Banner.module.css'
 
 export const Banner = ({ image }) => {
   const [aboutPage, setAboutPage] = useState(false);
@@ -15,18 +16,18 @@ export const Banner = ({ image }) => {
   return (
     <div
       className={
-        "overflow-hidden relative md:rounded-3xl rounded-lg md:h-48 h-28 flex justify-center items-center text-white text-6xl font-light mx-auto p-4"
+     styles.bannerCard
       }
     >
       <img
-        className="w-full h-full object-cover absolute inset-0"
+        className={styles.bannerImage}
         src={image}
         alt="banner"
       />
 
-      <div className="absolute inset-0 w-full h-full bg-black bg-opacity-30"></div>
+      <div className={styles/bannerTextFrame}></div>
       {!aboutPage && (
-        <p className="z-10 font-medium md:text-5xl text-2xl">
+        <p className={styles.bannerText}>
           Chez vous, partout et ailleurs
         </p>
       )}
