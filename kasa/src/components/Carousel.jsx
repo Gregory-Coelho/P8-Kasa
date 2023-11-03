@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ArrowLeft from "../assets/arrowLeft.svg";
 import ArrowRight from "../assets/arrowRight.svg";
+import { styles } from '../styles/Carousel.module.css'
 
 export const Carousel = ({ pictures }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,16 +18,16 @@ export const Carousel = ({ pictures }) => {
     );
   }
   return (
-    <div className="relative md:rounded-3xl rounded-lg h-64 w-full">
+    <div className={styles.carouselCard}>
       <img
-        className=" absolute object-cover h-full w-full md:rounded-3xl rounded-lg"
+        className={styles.carouselImage}
         src={pictures[currentSlide]}
         alt="images carrousel"
       />
-      <div className="inset-0 absolute w-full h-full flex justify-between items-center p-2">
+      <div className={styles.carouselArrowContainer}>
         {pictures.length > 1 && (
           <img
-            className=" h-full md:h-20 md:w-12 w-3"
+            className={styles.carouselArrowLeft}
             src={ArrowLeft}
             alt="flèche gauche"
             onClick={prevSlide}
@@ -35,7 +36,7 @@ export const Carousel = ({ pictures }) => {
 
         {pictures.length > 1 && (
           <img
-            className=" h-full md:h-20 md:w-12 w-3"
+            className={styles.carouselArrowRight}
             src={ArrowRight}
             alt="flèche droite"
             onClick={nextSlide}
@@ -44,7 +45,7 @@ export const Carousel = ({ pictures }) => {
       </div>
 
       {pictures.length > 1 && (
-        <div className="hidden absolute md:flex text-white bottom-1 left-1/2  -translate-x-1/2 -translate-y-1/2">
+        <div className={styles.carouselCounter}>
           {currentSlide + 1}/{pictures.length}
         </div>
       )}

@@ -1,11 +1,6 @@
 .cardLink{
   width: 100%;
 }
-@media (min-width: 768px) {
-   .cardLink{
-       width: auto;
-  }
-}
 .cardContainer{
    display: flex;
    overflow: hidden;
@@ -21,12 +16,6 @@
    background-position: center;
    background-size: cover;
 }
-@media (min-width: 768px) {
-   .cardContainer{
-       width: 20rem;
-       height: 20rem;
-  }
-}
 .cardGradient{
    position: absolute;
    top: 0;
@@ -40,4 +29,13 @@
 .cardTittle{
    z-index: 10;
    color: #ffffff;
+}
+@media (min-width: 768px) {
+   .cardContainer{
+       width: 20rem;
+       height: 20rem;
+  }
+  .cardLink{
+   width: auto;
+}
 }

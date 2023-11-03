@@ -12,12 +12,6 @@
   font-weight: 300;
   color: #ffffff;
 }
-@media (min-width: 768px) {
-  .bannerCard{
-      border-radius: 1.5rem;
-      height: 12rem
- }
-}
 .bannerImage{
   object-fit: cover;
   position: absolute;
@@ -46,8 +40,12 @@
   font-weight: 500;
 }
 @media (min-width: 768px) {
-  .bannerText{
-      font-size: 3rem;
-      line-height: 1;
+  .bannerCard{
+      border-radius: 1.5rem;
+      height: 12rem
  }
+ .bannerText{
+  font-size: 3rem;
+  line-height: 1;
+}
 }
