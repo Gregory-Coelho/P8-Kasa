@@ -1,11 +1,12 @@
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import { styles } from '../styles/HeaderAndFooter.module.css'
 
 export const HeaderAndFooter = ({ children }) => {
   return (
-    <div className="flex justify-between flex-col h-screen">
+    <div className={styles.headerAndFooterCard}>
       <Header />
-      <div className="md:mx-20 mx-4">{children}</div>
+      <div className={styles.headerAndFooterContainer}>{children}</div>
       <Footer />
     </div>
   );

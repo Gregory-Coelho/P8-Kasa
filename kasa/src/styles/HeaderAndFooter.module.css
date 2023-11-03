@@ -1,0 +1,15 @@
+.headerAndFooterCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.headerAndFooterContainer{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+@media (min-width: 768px) {
+  .headerAndFooterContainer{
+      margin-left: 5rem;
+      margin-right: 5rem;
+ }
+}
