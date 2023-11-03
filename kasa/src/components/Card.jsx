@@ -1,20 +1,21 @@
 import { Link } from "react-router-dom";
+import { styles } from '../styles/Card.module.css'
 
 export const Card = ({ cover, title, id }) => {
   return (
-    <Link className="w-full md:w-auto" to={`/accommodation/${id}`}>
+    <Link className={styles.cardLink} to={`/accommodation/${id}`}>
       <div
         key={id}
         className={
-          "flex items-end py-4 px-5 relative rounded-xl md:h-80 h-64 md:w-80 w-full bg-center bg-cover overflow-hidden"
+          styles.cardContainer
         }
         style={{
           backgroundImage: `url(${cover})`,
         }}
       >
-        <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-black/50"></div>
+        <div className={styles.cardGradient}></div>
 
-        <h3 className="z-10 text-white">{title}</h3>
+        <h3 className={styles.cardTittle}>{title}</h3>
       </div>
     </Link>
   );

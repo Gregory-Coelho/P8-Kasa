@@ -1,0 +1,43 @@
+.cardLink{
+  width: 100%;
+}
+@media (min-width: 768px) {
+   .cardLink{
+       width: auto;
+  }
+}
+.cardContainer{
+   display: flex;
+   overflow: hidden;
+   position: relative;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   padding-left: 1.25rem;
+   padding-right: 1.25rem;
+   align-items: flex-end;
+   border-radius: 0.75rem;
+   width: 100%;
+   height: 16rem;
+   background-position: center;
+   background-size: cover;
+}
+@media (min-width: 768px) {
+   .cardContainer{
+       width: 20rem;
+       height: 20rem;
+  }
+}
+.cardGradient{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+.cardTittle{
+   z-index: 10;
+   color: #ffffff;
+}

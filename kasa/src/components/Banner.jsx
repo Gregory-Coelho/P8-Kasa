@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import {styles} from '../styles/Banner.module.css'
+import { styles } from '../styles/Banner.module.css'
 
 export const Banner = ({ image }) => {
   const [aboutPage, setAboutPage] = useState(false);
@@ -16,7 +16,7 @@ export const Banner = ({ image }) => {
   return (
     <div
       className={
-     styles.bannerCard
+        styles.bannerCard
       }
     >
       <img
@@ -25,7 +25,7 @@ export const Banner = ({ image }) => {
         alt="banner"
       />
 
-      <div className={styles/bannerTextFrame}></div>
+      <div className={styles / bannerTextFrame}></div>
       {!aboutPage && (
         <p className={styles.bannerText}>
           Chez vous, partout et ailleurs
