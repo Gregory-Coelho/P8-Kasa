@@ -1,24 +1,30 @@
 import { useState } from "react";
 import arrow from "../assets/arrow.svg";
+import { styles } from '../styles/Collapse.module.css'
 
 export const Collapse = ({ title, content }) => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="flex flex-col w-full">
+    <div className={styles.collapseCard}>
       <div
         onClick={() => setToggle(!toggle)}
-        className="bg-primary text-white md:h-12 h-8 text-xs rounded-md flex justify-between cursor-pointer justify-items-center content-center items-center p-4 w-full overflow-hidden z-10"
+        className={styles.collapseContainer}
       >
         <h2>{title}</h2>
         <img
-          className={`transition-all h-3.5 ${toggle ? "rotate-180" : ""}`}
+          className={`
+          height: 0.875rem
+transition-property: all
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+transition-duration: 300ms
+          ${toggle ? "--transform-rotate: 180deg; " : ""}`}
           src={arrow}
           alt="flèche"
         />
       </div>
       {toggle && (
-        <div className="bg-lightgrey text-primary  overflow-hidden transition-max-height ease-in-out duration-300 rounded-md py-4 px-5 pt-6 -mt-2 ">
+        <div className={styles.collapseToggle}>
           {Array.isArray(content) ? (
             content.map((item, index) => <p key={index}>{item}</p>)
           ) : (
