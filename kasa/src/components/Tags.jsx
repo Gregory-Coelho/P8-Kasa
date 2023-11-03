@@ -1,11 +1,12 @@
 import React from "react";
+import { styles } from '../styles/Tags.module.css'
 
 export const Tags = ({ tags }) => {
   return (
-    <span className="flex gap-2">
+    <span className={styles.tagsCard}>
       {tags.map((tag) => (
         <div
-          className="bg-primary text-white md:text-xs text-[10px] md:rounded-lg rounded-md flex justify-center items-center py-1 w-28 md:h-6 h-4"
+          className={styles.tagsContainer}
           key={tag}
         >
           {tag}
