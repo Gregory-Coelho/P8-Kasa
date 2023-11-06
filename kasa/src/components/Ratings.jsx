@@ -1,7 +1,7 @@
 import React from "react";
 import FullStar from "../assets/fullStar.svg";
 import EmptyStar from "../assets/emptyStar.svg";
-import { styles } from '../styles/Ratings.module.css'
+import styles from '../styles/Ratings.module.css'
 
 export const Ratings = ({ rating }) => {
   return (

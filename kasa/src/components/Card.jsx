@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
-import { styles } from '../styles/Card.module.css'
+import styles from '../styles/Card.module.css'
 
 export const Card = ({ cover, title, id }) => {
   return (
     <Link className={styles.cardLink} to={`/accommodation/${id}`}>
       <div
         key={id}
-        className={
-          styles.cardContainer
-        }
+        className={styles.cardContainer}
         style={{
           backgroundImage: `url(${cover})`,
         }}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import arrow from "../assets/arrow.svg";
-import { styles } from '../styles/Collapse.module.css'
+import styles from '../styles/Collapse.module.css'
 
 export const Collapse = ({ title, content }) => {
   const [toggle, setToggle] = useState(false);
@@ -14,10 +14,10 @@ export const Collapse = ({ title, content }) => {
         <h2>{title}</h2>
         <img
           className={`
-          height: 0.875rem
-transition-property: all
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-transition-duration: 300ms
+          height: 0.875rem;
+transition-property: all;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 300ms;
           ${toggle ? "--transform-rotate: 180deg; " : ""}`}
           src={arrow}
           alt="flèche"

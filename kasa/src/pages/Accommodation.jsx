@@ -4,8 +4,8 @@ import { Carousel } from "../components/Carousel";
 import { InfosAccommodation } from "../components/InfosAccommodation";
 import datas from "../data/data.js";
 import { Error } from "./Error";
-import { styles } from '../styles/Accommodation.module.css'
-
+import styles from '../styles/Accommodation.module.css'
+import React from 'react';
 
 export const Accommodation = () => {
   const { id } = useParams();
@@ -16,7 +16,7 @@ export const Accommodation = () => {
   }
 
   return (
-    <HeaderAndFooter>
+    <HeaderAndFooter children={
       <div className={styles.accommodationCard}>
         <Carousel pictures={accommodation.pictures} />
         <InfosAccommodation
@@ -30,6 +30,6 @@ export const Accommodation = () => {
           equipments={accommodation.equipments}
         />
       </div>
-    </HeaderAndFooter>
+    } />
   );
 };

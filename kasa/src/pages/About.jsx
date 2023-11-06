@@ -2,7 +2,7 @@ import { HeaderAndFooter } from "../components/HeaderAndFooter";
 import { Banner } from "../components/Banner";
 import AboutImage from "../assets/about.png";
 import { Collapse } from "../components/Collapse";
-import { styles } from '../styles/About.module.css'
+import styles from '../styles/About.module.css'
 
 export const About = () => {
   const aboutDetails = [

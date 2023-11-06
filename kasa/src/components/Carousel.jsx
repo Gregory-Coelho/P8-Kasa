@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ArrowLeft from "../assets/arrowLeft.svg";
 import ArrowRight from "../assets/arrowRight.svg";
-import { styles } from '../styles/Carousel.module.css'
+import styles from '../styles/Carousel.module.css'
 
 export const Carousel = ({ pictures }) => {
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -1,6 +1,6 @@
 import datas from "../data/data.js";
 import { Card } from "./Card";
-import { styles } from '../styles/Gallery.module.css'
+import styles from '../styles/Gallery.module.css'
 
 export const Gallery = () => {
   return (

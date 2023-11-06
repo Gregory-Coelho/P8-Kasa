@@ -1,6 +1,6 @@
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import { styles } from '../styles/HeaderAndFooter.module.css'
+import styles from '../styles/HeaderAndFooter.module.css'
 
 export const HeaderAndFooter = ({ children }) => {
   return (
