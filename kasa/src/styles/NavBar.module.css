@@ -1,10 +1,11 @@
 .navBarCard{
-  display: flex;
+   display: flex;
+   align-items: center;
    gap: 1.5rem;
    justify-content: space-between;
 }
 .navBarLink{
-  font-size: 0.75rem;
+   font-size: 0.75rem;
    line-height: 1rem;
    text-transform: uppercase;
 }
