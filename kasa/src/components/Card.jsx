@@ -12,7 +12,6 @@ export const Card = ({ cover, title, id }) => {
         }}
       >
         <div className={styles.cardGradient}></div>
-
         <h3 className={styles.cardTittle}>{title}</h3>
       </div>
     </Link>

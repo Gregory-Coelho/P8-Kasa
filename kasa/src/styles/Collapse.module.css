@@ -1,9 +1,8 @@
 .collapseCard{
-  display: flex;
-   flex-direction: column;
    width: 100%;
 }
 .collapseContainer{
+   background-color: #FF6060;
    display: flex;
    overflow: hidden;
    z-index: 10;
@@ -12,8 +11,7 @@
    justify-items: center;
    align-content: center;
    align-items: center;
-   border-radius: 0.375rem;
-   width: 100%;
+   border-radius: 0.75rem;
    height: 2rem;
    font-size: 0.75rem;
    line-height: 1rem;
@@ -21,14 +19,12 @@
    cursor: pointer;
 }
 .collapseToggle{
+   color: #FF6060;
+   margin:0;
+   background-color: #F6F6F6;
   overflow: hidden;
-   padding-top: 1rem;
-   padding-bottom: 1rem;
-   padding-left: 1.25rem;
-   padding-right: 1.25rem;
-   padding-top: 1.5rem;
-   margin-top: -0.5rem;
-   border-radius: 0.375rem;
+   padding:1rem;
+   border-radius: 0.75rem;
    transition-duration: 300ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

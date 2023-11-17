@@ -5,9 +5,11 @@
    justify-content: space-between;
 }
 .navBarLink{
+   color:#FF6060;
    font-size: 0.75rem;
    line-height: 1rem;
    text-transform: uppercase;
+   text-decoration: none;
 }
 .navBarLink:hover{
    text-decoration: underline;

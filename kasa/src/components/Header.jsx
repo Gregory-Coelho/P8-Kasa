@@ -6,8 +6,8 @@ import styles from '../styles/Header.module.css'
 export const Header = () => {
   return (
     <div className={styles.headerCard}>
-      <Link className="headerLink" to="/">
-        <img src={logo} alt="logo" className="headerImage" />
+      <Link className={styles.headerLink} to="/">
+        <img src={logo} alt="logo" />
       </Link>
       <NavBar />
     </div>

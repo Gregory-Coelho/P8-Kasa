@@ -1,18 +1,18 @@
 .galleryCard{
   display: flex;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  background-color: #F6F6F6;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
   align-items: center;
   border-radius: 1.5rem;
+  padding: 3rem;
 }
 @media (min-width: 768px) {
   .galleryCard{
-      padding: 4rem;
+      padding: 3rem;
       margin-top: 2.5rem;
       margin-bottom: 2.5rem;
-      gap: 6rem;
+      gap: 3rem;
  }
 }

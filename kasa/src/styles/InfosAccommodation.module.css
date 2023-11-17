@@ -1,31 +1,33 @@
 .infosAccommodationCard{
   display: flex;
-   margin-top: 0.25rem;
-   margin-bottom: 1.25rem;
+  width: 100%;
    flex-direction: column;
+   gap:30px;
 }
 .infosAccommodationContainer{
   display: flex;
-   flex-direction: column;
-   gap: 0.25rem;
+  width: 100%;
+  justify-content: space-between;
 }
 .infosAccommodationTagsContainer{
   display: flex;
    flex-direction: column;
-   gap: 0.5rem;
    justify-content: space-between;
 }
 .infosAccommodationTextContainer{
   display: flex;
    flex-direction: column;
    gap: 0.25rem;
+   color: #FF6060;
 }
 .infosAccommodationTitle{
+   margin:0;
   font-size: 1.125rem;
    line-height: 1.75rem;
    font-weight: 400;
 }
 .infosAccommodationText{
+   margin:0;
   font-size: 0.875rem;
    line-height: 1.25rem;
 }
@@ -34,22 +36,24 @@
    justify-content: space-between;
 }
 .infosAccommodationRatingsTextAndImageContainer{
+   color: #FF6060;
   display: flex;
    align-items: center;
 }
 .infosAccommodationRatingsText{
   margin: 0.75rem;
    width: min-content;
-   font-size: 0.75rem;
+   font-size: 1rem;
    line-height: 1rem;
    text-align: right;
 }
 .infosAccommodationRatingsImage{
-  border-radius: 9999px;
+  border-radius: 50%;
    width: 2rem;
    height: 2rem;
 }
 .infosAccommodationCollapseContainer{
+   border-radius: 1rem;
   display: flex;
    flex-direction: column;
    gap: 1.25rem;
@@ -61,7 +65,7 @@
        justify-content: space-between;
   }
    .infosAccommodationTagsContainer{
-       gap: 0.75rem;
+gap:20px
   }
    .infosAccommodationTitle{
        font-size: 2.25rem;

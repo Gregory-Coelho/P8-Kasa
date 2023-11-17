@@ -1,30 +1,27 @@
 .footerCard{
-  display: flex;
+   display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    width: 100vw;
+   height: 209px;
    background-color: #000000;
 }
 .footerContainer{
    display: flex;
-   margin-bottom: 1.25rem;
-   margin-top: 2.5rem;
    flex-direction: column;
-   gap: 0.75rem;
    justify-content: center;
    align-items: center;
-   font-size: 0.75rem;
-   line-height: 1rem;
+   gap: 0.75rem;
    text-align: center;
 }
 .footerImage{
-  width: 8rem;
+   width: 8rem;
    height: 2.5rem;
 }
 .footerText{
-  width: 8rem;
    color: #ffffff;
+   font-size: 24px;
 }
 @media (min-width: 768px) {
    .footerCard{
