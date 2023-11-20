@@ -15,9 +15,9 @@ export const Collapse = ({ title, content }) => {
         <img
           className={`
           height: 0.875rem;
-transition-property: all;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-transition-duration: 300ms;
+          transition-property: all;
+          ransition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: 300ms;
           ${toggle ? "--transform-rotate: 180deg; " : ""}`}
           src={arrow}
           alt="flèche"
