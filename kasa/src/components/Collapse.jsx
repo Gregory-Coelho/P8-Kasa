@@ -12,16 +12,17 @@ export const Collapse = ({ title, content }) => {
         className={styles.collapseContainer}
       >
         <h2>{title}</h2>
-        <img
-          className={`
-          height: 0.875rem;
-          transition-property: all;
-          ransition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-duration: 300ms;
-          ${toggle ? "--transform-rotate: 180deg; " : ""}`}
+        {toggle ? <img
+          className={styles.arrowDown}
           src={arrow}
           alt="flèche"
-        />
+        /> :
+          <img
+            className={styles.arrowUp}
+            src={arrow}
+            alt="flèche"
+          />
+        }
       </div>
       {toggle && (
         <div className={styles.collapseToggle}>

@@ -20,11 +20,13 @@
    height: 100%;
 }
 .carouselArrowLeft{
+   cursor: pointer;
    width: 0.75rem;
    height: 100%;
    padding: 20px;
 }
 .carouselArrowRight{
+   cursor: pointer;
    width: 0.75rem;
    height: 100%;
    padding: 20px;
