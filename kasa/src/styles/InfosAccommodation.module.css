@@ -2,12 +2,13 @@
   display: flex;
   width: 100%;
    flex-direction: column;
-   gap:30px;
+   margin-bottom: 1.25rem;
 }
 .infosAccommodationContainer{
   display: flex;
   width: 100%;
   justify-content: space-between;
+  flex-direction: column;
 }
 .infosAccommodationTagsContainer{
   display: flex;
@@ -60,9 +61,13 @@
    justify-content: space-between;
 }
 @media (min-width: 768px) {
+   .infosAccommodationCard{
+   gap:30px;
+   }
    .infosAccommodationContainer{
        display: flex;
        justify-content: space-between;
+       flex-direction: row;
   }
    .infosAccommodationTagsContainer{
 gap:20px
