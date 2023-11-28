@@ -30,5 +30,7 @@
   .footerText{
     width: 100%;
     line-height: 2rem;
+    font-size: 24px;
+
  }
 }
