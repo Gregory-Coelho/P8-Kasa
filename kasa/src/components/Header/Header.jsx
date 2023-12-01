@@ -1,7 +1,7 @@
-import { NavBar } from "./NavBar";
-import logo from "../assets/logo.svg";
+import { NavBar } from "../NavBar/NavBar";
+import logo from "./logo.svg";
 import { Link } from "react-router-dom";
-import styles from '../styles/Header.module.css'
+import styles from './Header.module.css'
 
 export const Header = () => {
   return (

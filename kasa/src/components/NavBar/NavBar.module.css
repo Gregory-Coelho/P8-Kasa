@@ -4,6 +4,13 @@
    gap: 1.5rem;
    justify-content: space-between;
 }
+.navBarLinkActive{
+   text-decoration: underline;
+   color:#FF6060;
+   font-size: 0.75rem;
+   line-height: 1rem;
+   text-transform: uppercase;
+}
 .navBarLink{
    color:#FF6060;
    font-size: 0.75rem;
@@ -23,4 +30,8 @@
        line-height: 2rem;
        text-transform: none;
   }
+  .navBarLinkActive{
+       font-size: 1.5rem;
+       text-transform: none;
+      }
 }

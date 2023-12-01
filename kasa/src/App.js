@@ -1,8 +1,8 @@
 import React from "react";
 import { Home } from "./pages/Home.jsx";
-import { About } from "./pages/About.jsx";
-import { Accommodation } from "./pages/Accommodation.jsx";
-import { Error } from "./pages/Error.jsx";
+import { About } from "./pages/About/About.jsx";
+import { Accommodation } from "./pages/Accommodation/Accommodation.jsx";
+import { Error } from "./pages/Error/Error.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 

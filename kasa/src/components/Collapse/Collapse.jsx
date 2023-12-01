@@ -1,6 +1,6 @@
 import { useState } from "react";
-import arrow from "../assets/arrow.svg";
-import styles from '../styles/Collapse.module.css'
+import arrow from "./arrow.svg";
+import styles from './Collapse.module.css'
 
 export const Collapse = ({ title, content }) => {
   const [toggle, setToggle] = useState(false);

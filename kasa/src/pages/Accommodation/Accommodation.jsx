@@ -1,10 +1,10 @@
-import { HeaderAndFooter } from "../components/HeaderAndFooter";
+import { HeaderAndFooter } from "../../components/HeaderAndFooter/HeaderAndFooter";
 import { useParams } from "react-router-dom";
-import { Carousel } from "../components/Carousel";
-import { InfosAccommodation } from "../components/InfosAccommodation";
-import datas from "../data/data.js";
-import { Error } from "./Error";
-import styles from '../styles/Accommodation.module.css'
+import { Carousel } from "../../components/Carousel/Carousel.jsx";
+import { InfosAccommodation } from "../../components/InfosAccommodation/InfosAccommodation.jsx";
+import datas from "../../data/data.js";
+import { Error } from "../Error/Error.jsx";
+import styles from './Accommodation.module.css'
 import React from 'react';
 
 export const Accommodation = () => {

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from '../styles/Card.module.css'
+import styles from './Card.module.css'
 
 export const Card = ({ cover, title, id }) => {
   return (

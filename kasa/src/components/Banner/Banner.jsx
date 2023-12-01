@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import styles from '../styles/Banner.module.css'
+import styles from './Banner.module.css'
 
 export const Banner = ({ image }) => {
   const [aboutPage, setAboutPage] = useState(false);

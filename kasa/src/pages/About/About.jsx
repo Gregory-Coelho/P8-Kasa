@@ -1,8 +1,8 @@
-import { HeaderAndFooter } from "../components/HeaderAndFooter";
-import { Banner } from "../components/Banner";
-import AboutImage from "../assets/about.png";
-import { Collapse } from "../components/Collapse";
-import styles from '../styles/About.module.css'
+import { HeaderAndFooter } from "../../components/HeaderAndFooter/HeaderAndFooter";
+import { Banner } from "../../components/Banner/Banner";
+import AboutImage from "../../components/Banner/about.png";
+import { Collapse } from "../../components/Collapse/Collapse";
+import styles from './About.module.css'
 
 export const About = () => {
   const aboutDetails = [

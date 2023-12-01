@@ -1,7 +1,7 @@
-import { HeaderAndFooter } from "../components/HeaderAndFooter";
-import { Banner } from "../components/Banner";
-import { Gallery } from "../components/Gallery";
-import HomeImage from "../assets/home.png";
+import { HeaderAndFooter } from "../components/HeaderAndFooter/HeaderAndFooter";
+import { Banner } from "../components/Banner/Banner";
+import { Gallery } from "../components/Gallery/Gallery";
+import HomeImage from "../components/Banner/home.png"
 
 export const Home = () => {
   return (

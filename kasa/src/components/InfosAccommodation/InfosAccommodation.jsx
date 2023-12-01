@@ -1,7 +1,7 @@
-import { Collapse } from "./Collapse";
-import { Ratings } from "./Ratings";
-import { Tags } from "./Tags";
-import styles from '../styles/InfosAccommodation.module.css'
+import { Collapse } from "../Collapse/Collapse";
+import { Ratings } from "../Ratings/Ratings";
+import { Tags } from "../Tags/Tags";
+import styles from './InfosAccommodation.module.css'
 
 export const InfosAccommodation = ({
   title,

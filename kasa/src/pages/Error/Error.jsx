@@ -1,7 +1,7 @@
-import { HeaderAndFooter } from "../components/HeaderAndFooter";
+import { HeaderAndFooter } from "../../components/HeaderAndFooter/HeaderAndFooter";
 import { NavLink } from "react-router-dom";
-import error from "../assets/404.svg";
-import styles from '../styles/Error.module.css'
+import error from "./404.svg";
+import styles from './Error.module.css'
 
 
 export const Error = () => {
